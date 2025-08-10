@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>90‑Day Diabetes &amp; Obesity Remission Kit</title>
+
+  <!-- SEO: descriptive metadata and local business schema. Local SEO helps
+       healthcare providers appear in local searches【106784334374449†L740-L807】. -->
+  <meta name="description" content="A mobile‑first 90‑day programme designed for Indian patients to achieve diabetes and obesity remission through personalised diet, exercise and sleep guidance." />
+  <meta name="keywords" content="diabetes remission, obesity remission, Indian diet plan, 90 day programme, Homa Health Care Center" />
+  <link rel="canonical" href="https://www.homahealthcarecenter.in/remission‑kit" />
+
+  <!-- LocalBusiness schema for search engines -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Homa Health Care Center",
+      "url": "https://www.homahealthcarecenter.in",
+      "logo": "https://www.homahealthcarecenter.in/logo.png",
+      "telephone": "+91 9963721999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Fort Worth",
+        "addressRegion": "Texas",
+        "addressCountry": "US"
+      },
+      "priceRange": "INR30000",
+      "medicalSpecialty": "Endocrinology"
+    }
+  </script>
+
+  <!-- Google Analytics 4 (replace G-XXXXXXX with your Measurement ID).  This
+       script should be placed in the head to collect page_view events【66849504371648†L1032-L1041】. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">90‑Day Remission Kit</h1>
+      <!-- Balloon graphic linking to the clinic -->
+      <a href="https://www.homahealthcarecenter.in" class="balloon" aria-label="Homa Health Care Center">
+        🎈 Homa Health Care Center
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero section with background illustration (replace the image path with a relevant
+         Indian woman caring for her mother).  The overlay helps keep text readable. -->
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h2>Reverse diabetes &amp; obesity in 90 days</h2>
+        <p>Join our science‑backed programme tailored for Indian lifestyles. Pay once (₹30 000) and follow personalised diet, exercise and sleep plans designed by Dr. Muddu Surendra Nehru.</p>
+        <a href="#register" class="btn-primary">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Registration form -->
+    <section id="register" class="registration">
+      <h3>Register Now</h3>
+      <p>Enter your name and phone number to receive daily guidance. We respect your privacy and will never spam you.</p>
+      <form id="registration-form" autocomplete="off">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required pattern="^\+?91?[0-9]{10}$" placeholder="+91 9876543210" />
+
+        <button type="submit" class="btn-primary">Submit &amp; Start</button>
+      </form>
+      <div id="registration-message" class="message" role="alert" aria-live="polite"></div>
+    </section>
+
+    <!-- Placeholder sections for daily plans.  These can be replaced with dynamic
+         components rendered by app.js after the user registers. -->
+    <section id="daily-plan" class="plan hidden">
+      <h3>Your Day <span id="current-day"></span> Plan</h3>
+      <div class="meal-options">
+        <h4>Vegetarian Plan (<span id="veg-style"></span>)</h4>
+        <ul id="veg-meals"></ul>
+        <h4>Non‑Vegetarian Plan (<span id="nonveg-style"></span>)</h4>
+        <ul id="nonveg-meals"></ul>
+      </div>
+      <div class="exercise">
+        <h4>Exercise</h4>
+        <p id="exercise-desc"></p>
+      </div>
+      <div class="sleep">
+        <h4>Sleep Tip</h4>
+        <p id="sleep-tip"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Dr. Muddu Surendra Nehru, MD Professor of Medicine <a href="tel:+919963721999">09963721999</a></p>
+      <p>&copy; <span id="year"></span> Homa Health Care Center • <a href="https://www.homahealthcarecenter.in">www.homahealthcarecenter.in</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
