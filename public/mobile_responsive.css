@@ -1,0 +1,59 @@
+/* mobile_responsive.css: basic responsive styling */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1a202c;
+}
+
+.container {
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #047857;
+}
+
+.meal-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #f9fafb;
+}
+
+.meal-card h3 {
+  margin-top: 0;
+  color: #ef4444;
+}
+
+/* Form styles */
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .meal-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .meal-card p {
+    margin: 0 8px;
+  }
+}
