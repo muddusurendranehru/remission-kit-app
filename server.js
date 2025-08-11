@@ -32,6 +32,8 @@ const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // Register a new user
+// Register a new user
+// Register a new user
 app.post('/api/register', async (req, res) => {
   const { name, phone } = req.body;
   if (!name || !phone) {
@@ -40,7 +42,7 @@ app.post('/api/register', async (req, res) => {
   try {
     const { data, error } = await supabase
       .from('patients')
-      .insert([{ name, phone_number: phone }]);
+      .insert([{ name, phone }]);
     if (error) throw error;
     res.json({ success: true, data });
   } catch (err) {
